@@ -1,6 +1,6 @@
 __pycache__
 .ipynb_checkpoints
-Instacart/Data/*.csv
+data/*.csv
 
 
 ## Ignore Sublime text stuff
