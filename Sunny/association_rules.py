@@ -90,7 +90,7 @@ def association_rules(item_df, min_support):
 
     item_pair_stats['confidenceAtoB'] = item_pair_stats['supportAB'] / item_pair_stats['supportA']
     item_pair_stats['confidenceBtoA'] = item_pair_stats['supportAB'] / item_pair_stats['supportB']
-    item_pair_stats['lift']           = item_pair_stats['supportAB'] / (item_pair_stats['supportA'] * item_pair_stats['supportB']) * 100
+    item_pair_stats['lift']           = item_pair_stats['supportAB'] / (item_pair_stats['supportA'] * item_pair_stats['supportB'])
 
     # Return association rules sorted by lift in descending order
     return item_pair_stats.sort_values('lift', ascending=False)
