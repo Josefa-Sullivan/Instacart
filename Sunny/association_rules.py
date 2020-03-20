@@ -108,5 +108,7 @@ orders_products_df = orders_products_df[['order_id','product_id']]
 
 rules = association_rules(orders_products_df, float(min_support_input))
 
+product_name = pd.read_csv('../data/products.csv')
+
 rules_final = merge_item_name(rules, product_name).sort_values('lift', ascending=False)
 rules_final.to_csv('../data/association_rules_df.csv')
