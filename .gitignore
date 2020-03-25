@@ -1,7 +1,7 @@
 __pycache__
 .ipynb_checkpoints
 data/*.csv
-
+.*
 
 ## Ignore Sublime text stuff
 
