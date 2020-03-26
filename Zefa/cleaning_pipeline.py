@@ -30,9 +30,9 @@ goods.department = goods.department.str.replace(' ', '_').str.lower()
 full_prod_orders = pd.merge(all_orders,goods, on = ['product_id','product_id'])
 
 # Create a dataframe that has the total number of items bought per department for each user
-dept_user_df = full_prod_orders.groupby(['user_id','department'], as_index=False).product_id.agg('count')
-dept_user_df = dept_user_df.pivot(index='user_id', columns='department', values = 'product_id')
-dept_user_df = dept_user_df.fillna(0)
+# dept_user_df = full_prod_orders.groupby(['user_id','department'], as_index=False).product_id.agg('count')
+# dept_user_df = dept_user_df.pivot(index='user_id', columns='department', values = 'product_id')
+# dept_user_df = dept_user_df.fillna(0)
 
 # # Find sub-populations of users who buy baby items, pet items or alcohol
 # # 34782 shoppers bought baby items
