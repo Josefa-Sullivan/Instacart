@@ -1,5 +1,5 @@
 '''
-Goal: To return a csv with the association rules with product item_names
+Goal: To return a csv with the association rules with aisles
 
 This file will ask for the name of the csv within the data folder to use
 as the dataframe to create the association rules with. It will also ask

@@ -1,6 +1,10 @@
 import random
 
 def recommender(str_list):
+  '''
+  Takes a list of product items as strings and returns
+  three recommended products
+  '''
   str_list = list(map(str.lower, str_list))
   aisles = pd.Series([prod_aisles.loc[prod_aisles['product_name'] == i, 'aisle_id'].iat[0] for i in str_list]).value_counts()
 
